@@ -1,0 +1,39 @@
+<script>
+let peso = parseFloat(prompt("insira seu peso"))
+let altura = parseFloat(prompt("insira sua altura"))
+
+const calculoIMC = peso / (altura * altura)
+
+if (calculoIMC < 18.5)
+{
+    alert("Você está abaixo do peso")
+} 
+else if (calculoIMC >= 18.5 || calculoIMC <= 24.9)
+{
+    alert("peso normal")
+}
+else if (calculoIMC >= 25.0 || calculoIMC<= 29.9)
+{
+    alert ("sobrepeso")
+}
+else if (calculoIMC >= 30.0 || calculoIMC <= 34.9){
+ 
+   alert("obesidade grau 1")
+}
+else if(calculoIMC >= 35.0 || calculo <= 39.9){
+    alert("obesidade grau 2")
+}else{
+    alert("obesidade grau 3(morbida)")
+}
+
+const reiniciar = confirm("deseja fazer novamente?")
+if (reiniciar)
+{
+ imc();
+}
+else 
+{
+    alert("sistema encerrado")
+}
+
+</script>
